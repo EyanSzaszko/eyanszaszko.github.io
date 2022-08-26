@@ -79,7 +79,7 @@ body {
     overflow: hidden;
     background-color: rgb(10, 10, 10);
     margin: 0;
-    background-image: url("https://192.168.1.72:8080/Images/background.jpg");
+    background-image: url("static/background.jpg");
 }
 
 .navBar {
@@ -202,7 +202,7 @@ img {
         padding: 8px;
         object-fit: cover;
         max-width: 29%;
-        max-height: auto;
+        max-height: initial;
     }
 
 .gallery-image {
