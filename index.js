@@ -82,13 +82,13 @@ for (let i = 0; i < particlesCount; i++) {
 
 //Place particles
 const particlesGeometry1 = new THREE.BufferGeometry()
-particlesGeometry1.setAttribute('position', new BufferAttribute(positions1, 3))
+particlesGeometry1.setAttribute('position', new THREE.BufferAttribute(positions1, 3))
 
 const particlesGeometry2 = new THREE.BufferGeometry()
-particlesGeometry2.setAttribute('position', new BufferAttribute(positions2, 3))
+particlesGeometry2.setAttribute('position', new THREE.BufferAttribute(positions2, 3))
 
 const particlesGeometry3 = new THREE.BufferGeometry()
-particlesGeometry3.setAttribute('position', new BufferAttribute(positions3, 3))
+particlesGeometry3.setAttribute('position', new THREE.BufferAttribute(positions3, 3))
 
 // Material
 const particlesMaterial1 = new THREE.PointsMaterial({
