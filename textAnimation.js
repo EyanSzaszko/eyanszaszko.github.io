@@ -1,6 +1,4 @@
-﻿import { typeWriter } from './typeWriter';
-import { dataText } from './script';
-
+﻿
 // start a typewriter animation for a text in the dataText array
 export function StartTextAnimation(i) {
     if (typeof dataText[i] == 'undefined') {

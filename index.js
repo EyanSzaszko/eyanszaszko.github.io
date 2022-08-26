@@ -1,5 +1,7 @@
 import { GLTFLoader } from 'https://unpkg.com/three@0.127.0/examples/jsm/loaders/GLTFLoader.js'
 import * as THREE from 'https://unpkg.com/three@0.127.0/build/three.module.js'
+
+/*
 //Splash Text Animation
 export var dataText = [titleText(), "Designer", "Editor", "Creator"];
 
@@ -8,8 +10,8 @@ function titleText() {
 }
 
 // start the text animation
-StartTextAnimation(0);
-
+textAnimation(0);
+*/
 // Canvas
 const canvas = document.querySelector('canvas.webgl')
 
