@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 	<head>
 		<meta charset=utf-8>
@@ -6,15 +6,147 @@
 		<title>Three</title>
         <link rel="stylesheet" type="text/css" href="style.css">
 	</head>
-	<body>
+    <body>
         <canvas class="webgl"></canvas>
-        <div>
-            <h1>Hello!</h1>
-            <h2>My name is Rajat.</h2>
-            <h3>I love Three.JS.</h3>
-			<img  src="/static/graphics/Laparo.jpg" alt="Laparoscopic Trainer Web Advertisement">
-        </div>
-         <!-- CDN Link to Three.js -->
+        <main>
+
+            <div class="navBar">
+                <span id="graphics-link">Graphics</span>
+                <span id="video-link">Video</span>
+                <span id="coding-link">Coding</span>
+                <span id="contact-link">Contact</span>
+                <a class="navBar-link" href="https://www.linkedin.com/in/eyan-szaszko/" target="_blank">
+                    <img class="navBar-img" src="/static/images/icons/linkedin-icon.png" alt="Linkedin">
+                </a>
+                <a class="navBar-link" href="https://www.youtube.com/channel/UCDVqO6eKcgtecO0v05ACwIA/featured" target="_blank">
+                    <img class="navBar-img" src="/static/images/icons/youtube-icon.png" alt="YouTube">
+                </a>
+            </div>
+
+            <div class="lightbox">
+                <div class="lightbox-target">
+                    <img id="lightbox-image"></img>
+                </div>
+                <a class="lightbox-close" href="#"></a>
+            </div>
+            <div class="container">
+                <div class="splash-head">
+                    <div class="splash">
+                        <h2>Eyan Szaszko</h2>
+                        <h1>Scroll Down</h1>
+                        <div class="scroll-arrow"><p><i class="fa-solid fa-angle-down"></i></p></div>
+                    </div>
+                </div>
+
+                <section id="graphics">
+                    <div id="left" class="box">
+                        <div class="text">
+                            <h2>Designer</h2>
+                            <h3>Digital Media and 3D Content</h3>
+                            <p>
+                                I have extensive experience in digital media production and digital asset management, with mastery of Photoshop, Illustrator, HubSpot, Canva, Blender, Basecamp and Bynder. In the past, i've worked on social media, digital events, and marketing materials.
+                            </p>
+                        </div>
+                        <div class="gallery">
+                            <img class="clickable-image" src="/static/images/graphics/TBS_1.jpg" alt="Tal-Ben Shahar Webinar Positivity Webinar">
+                            <img class="clickable-image" src="/static/images/graphics/SimWeek.jpg" alt="Healthcare Simulation Week Web Advert">
+                            <img class="clickable-image" src="/static/images/graphics/y2k.jpg" alt="Online DJ Event Ad">
+                        </div>
+
+                        <div class="gallery">
+                            <img class="clickable-image" src="static/images/graphics/Blender_Chair.png" alt="3D Rendered Chair, Glass, and Pillow">
+                            <img class="clickable-image" src="static/images/graphics/TBS_2.jpg" alt="Tal Ben Shahar Covid Webinar">
+                            <img class="clickable-image" src="static/images/graphics/Laparo.jpg" alt="Laparoscopic Trainer Web Advertisement">
+                        </div>
+
+                    </div>
+                </section>
+
+                <section id="video">
+                    <div id="right" class="box">
+                        <div class="text">
+                            <h2>Creator</h2>
+                            <h3>Videography and Editing</h3>
+                            <p>
+                                My video production skills include a mastery of Adobe Premiere, Adobe After Effects, webinar management, and experience in multiple video production roles such as DP, lighting, audio and editing. I have experiencing creating films, social media videos, webinars, and television productions.
+                            </p>
+                        </div>
+                        <div class="gallery">
+                            <a href="https://www.youtube.com/watch?v=BYif04eHsEc" target="_blank">
+                                <img class="clickable-video" src="/static/images/video/y3_thmb.png" alt="Year 3 Title Sequence" style="max-width: 90%">
+                            </a>
+                            <a href="https://youtu.be/IdUWMhx5tvg" target="_blank">
+                                <img class="clickable-video" src="/static/images/video/ab4r_thmb.png" alt="A Book For Rats Short Film" style="max-width: 90%">
+                            </a>
+                            <a href="https://www.youtube.com/watch?v=ylAujAKeF9w" target="_blank">
+                                <img class="clickable-video" src="/static/images/video/p103_thmb.png" alt="Hemorrhage Control Trainer Demonstration" style=" max-width: 90%">
+                            </a>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="coding">
+                    <div id="left" class="box">
+                        <div class="text">
+                            <h2>Print Design</h2>
+                            <h3>Flyers, Brochures, Photography</h3>
+                            <p>
+                                I am experienced in creating print media as well. My workflow usually includes Adobe Illustrator, Adobe InDesign, Adobe Photoshop, and the use of a DSLR camera if the project calls for it.
+                                My skills in print design has been used in flyers, sellsheets, brochures, catalogs, reports, banners, posters, and logos.
+                            </p>
+                        </div>
+                        <div class="gallery">
+                            <img class="clickable-image" src="static/images/print/Brem_Page_1.jpg" alt="Breast Cancer Detection Flyer" style=" max-width: 29%">
+                            <img class="clickable-image" src="static/images/print/Cardionics_Sellsheet.jpg" alt="Auscultation Simulator Sellsheet" style=" max-width: 29%">
+                            <img class="clickable-image" src="static/images/print/RFP_Logo.jpg" alt="Red Flag Poetry Logo" style=" max-width: 29%">
+                        </div>
+                        <div class="gallery">
+                            <img class="clickable-image" src="static/images/print/3D_Arizona.jpg" alt="A Can of Arizona flying above a hand">
+                            <img class="clickable-image" src="static/images/print/Photoshoot_12_19.jpg" alt="Dramatic Portrait Image">
+                            <img class="clickable-image" src="static/images/print/Film_Fest_6.jpg" alt="Film Festival Poster">
+                        </div>
+                    </div>
+                </section>
+
+                <div class="contact" id="contactid">
+                    <div class="about">
+                        <h2>Hi there,</h2>
+
+                        <p>
+                            I am a multimedia designer who lives in the Atlanta, GA area. I've applied my expertise in graphic design, VFX, 3D computer graphics, front-end web development, and video editing to a wide range of projects. My experience and background allows me to quickly understand the full scope of what's required to complete a project and rapidly producing deliverables.
+
+                            As a team member, I have made many friends and am always looking to be a consistent and positive team player. My career and  freelance work has allowed me to work with clients such as the Pennsylvania Department of Education, various production studios such as DEAD HOMES, the IUP Film Festival and several live streamers on Twitch.tv. If you have a project for which my skills, background, and working approach would be a good fit, please send me an email to start a conversation about it.
+
+                            I am a committed worker who always looks to improve their skills and to become a key member of the team by inspiring morale and collaborating with my team members. In my spare time I enjoy baking, playing retro video games, and playing bass guitar.
+                        </p>
+
+                        <div class="contact-buttons">
+                            <div class="contact-text">
+                                <a download="Resume" href="static/2022_Resume_Online.pdf">Resume</a>
+                            </div>
+                        </div>
+
+                        <div class=contact-buttons>
+                            <div class="contact-text">
+                                <a href="mailto: eyanaszaszko@gmail.com?subject= Letter of Recommendation Request:">Request Letter of Recommendation</a>
+                            </div>
+                        </div>
+
+                        <div class=contact-buttons>
+                            <div class="contact-text">
+                                <a href="mailto: eyanaszaszko@gmail.com">Contact Me</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer Section -->
+            <div class="footer">
+                <p>© 2022 by Eyan Szaszko</p>
+            </div>
+        </main>
+        <!-- CDN Link to Three.js -->
         <script type="module" src="./index.js"></script>
-	</body>
+    </body>
 </html>
