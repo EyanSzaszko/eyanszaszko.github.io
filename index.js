@@ -1,6 +1,5 @@
 import { GLTFLoader } from 'https://unpkg.com/three@0.127.0/examples/jsm/loaders/GLTFLoader.js'
 import * as THREE from 'https://unpkg.com/three@0.127.0/build/three.module.js'
-import '/textAnimation.js';
 //Splash Text Animation
 export var dataText = [titleText(), "Designer", "Editor", "Creator"];
 
