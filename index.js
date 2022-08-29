@@ -1,17 +1,45 @@
 import { GLTFLoader } from 'https://unpkg.com/three@0.127.0/examples/jsm/loaders/GLTFLoader.js'
 import * as THREE from 'https://unpkg.com/three@0.127.0/build/three.module.js'
 
-/*
 //Splash Text Animation
-export var dataText = [titleText(), "Designer", "Editor", "Creator"];
+var dataText = ["Developer", "Designer", "Editor", "Creator"];
 
-function titleText() {
-    return "Developer";
+function typeWriter(text, i, fnCallback) {
+    // chekc if text isn't finished yet
+    if (i < (text.length)) {
+        // add next character to h1
+        document.querySelector("h1").innerHTML = text.substring(0, i + 1) + '<span aria-hidden="true"></span>';
+
+        // wait for a while and call this function again for next character
+        setTimeout(function () {
+            typeWriter(text, i + 1, fnCallback)
+        }, 100);
+    }
+    // text finished, call callback if there is a callback function
+    else if (typeof fnCallback == 'function') {
+        // call callback after timeout
+        setTimeout(fnCallback, 700);
+    }
 }
-
+// start a typewriter animation for a text in the dataText array
+function StartTextAnimation(i) {
+    if (typeof dataText[i] == 'undefined') {
+        setTimeout(function () {
+            StartTextAnimation(0);
+        }, 10000);
+    }
+    // check if dataText[i] exists
+    if (i < dataText[i].length) {
+        // text exists! start typewriter animation
+        typeWriter(dataText[i], 0, function () {
+            // after callback (and whole text has been animated), start next text
+            setTimeout(() => { StartTextAnimation(i + 1) }, 1000);
+        });
+    }
+}
 // start the text animation
-textAnimation(0);
-*/
+StartTextAnimation(0);
+
 // Canvas
 const canvas = document.querySelector('canvas.webgl')
 
