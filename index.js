@@ -26,14 +26,14 @@ function StartTextAnimation(i) {
     if (typeof dataText[i] == 'undefined') {
         setTimeout(function () {
             StartTextAnimation(0);
-        }, 10000);
+        }, 1000);
     }
     // check if dataText[i] exists
     if (i < dataText[i].length) {
         // text exists! start typewriter animation
         typeWriter(dataText[i], 0, function () {
             // after callback (and whole text has been animated), start next text
-            setTimeout(() => { StartTextAnimation(i + 1) }, 1000);
+            setTimeout(() => { StartTextAnimation(i + 1) }, 500);
         });
     }
 }
@@ -52,6 +52,7 @@ const objectDistance = -.09;
 let laptop;
 let dslr;
 let play;
+
 // Mesh
 loader.load("static/laptop.glb", function (laptopGLTF) {
     laptop = laptopGLTF;
@@ -152,7 +153,6 @@ const particles3 = new THREE.Points(particlesGeometry3, particlesMaterial3)
 scene.add(particles3)
 
 // Lights
-
 const pointLight = new THREE.PointLight(0x6EB6FF, 0.9)
 pointLight.position.x = 2
 pointLight.position.y = 3
