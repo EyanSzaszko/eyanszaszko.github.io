@@ -291,14 +291,14 @@ lightbox.addEventListener('click', function () {
 })
 
 
-//Add clicks event listener to graphics, Video, coding, and contactid links
+//Add clicks event listener to graphics, Video, print, and contactid links
 var graphicsLink = document.getElementById('graphics-link');
 var videoLink = document.getElementById('video-link');
-var codingLink = document.getElementById('coding-link');
+var printLink = document.getElementById('print-link');
 var contactLink = document.getElementById('contact-link');
 var graphicsSection = document.getElementById("graphics");
 var videoSection = document.getElementById("video");
-var codingSection = document.getElementById("coding");
+var printSection = document.getElementById("print");
 var contactSection = document.getElementById("contactid");
 
 graphicsLink.addEventListener('click', function () {
@@ -309,8 +309,8 @@ videoLink.addEventListener('click', function () {
     videoSection.scrollIntoView({ behavior: "smooth" });
 }
 )
-codingLink.addEventListener('click', function () {
-    codingSection.scrollIntoView({ behavior: "smooth" });
+printLink.addEventListener('click', function () {
+    printSection.scrollIntoView({ behavior: "smooth" });
 }
 )
 contactLink.addEventListener('click', function () {
