@@ -412,6 +412,8 @@ a:link {
         margin-top: 50px;
         margin-left: 0px;
         margin-right: 0px;
+        margin-bottom: 200px;
+        word-spacing: 2px;
         font-size: 14px;
         font-family: "Open Sans", sans-serif;
     }
