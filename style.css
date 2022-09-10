@@ -259,6 +259,11 @@ img {
     margin-right: 50px;
 }
 
+.about-image {
+    grid-column: 4 / 5;
+    margin-top: 8vh;
+}
+
 .contact-buttons {
     font-size: 18pt;
     text-decoration: none;
@@ -409,15 +414,18 @@ a:link {
 
     .about {
         grid-column: 2/12;
-        margin-top: 50px;
         margin-left: 0px;
         margin-right: 0px;
-        margin-bottom: 200px;
+        padding-bottom: 200px;
         word-spacing: 2px;
         font-size: 14px;
         font-family: "Open Sans", sans-serif;
     }
-
+	
+	.about-image {
+	visibility: hidden;
+    }
+	
     .gallery {
         margin-left: 10px;
         max-height: 12vh;
