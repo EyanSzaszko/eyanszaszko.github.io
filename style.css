@@ -108,19 +108,21 @@ body {
             cursor: pointer;
         }
 
-.navBar-link {
-    text-decoration: none;
-    font-size: 20px;
-    color: white;
-    text-align: center;
-    padding: 6px 2%;
-    transition: transform .3s;
-}
+    .navBar-Blog {
+        text-decoration: none;
+        font-size: 20px;
+        color: white;
+        display:inline-block;
+        text-align: center;
+        padding: 6px 2%;
+        transition: transform .3s;
+    }
 
-        .navBar-link:hover {
-    color: #87CCE6;
-    cursor: pointer;
-       }
+    .navBar span:hover {
+        color: #87CCE6;
+        cursor: pointer;
+    }
+    
 .navBar-img {
     position: relative;
     display: flex;
