@@ -64,9 +64,6 @@ main {
     font-size: 24px;
 }
 
-.scroll-arrow {
-}
-
 .webgl {
     position: fixed;
     top: 0;
@@ -111,11 +108,18 @@ body {
     .navBar-Blog {
         text-decoration: none;
         font-size: 20px;
-        color: white;
         display:inline-block;
         text-align: center;
         padding: 6px 2%;
         transition: transform .3s;
+    }
+
+    :-webkit-any-link {
+        color: white !important;
+    }
+    :-webkit-any-link span:hover {
+        color: #87CCE6 !important;
+        cursor: pointer;
     }
 
     .navBar span:hover {
