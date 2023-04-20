@@ -37,6 +37,14 @@
   header h1 {
     font-size: 32px;
   }
+
+  .banner-text {
+    height: 40px;
+  }
+
+  .banner-img {
+    margin-bottom: 20px;
+  }
   
   nav ul {
     list-style: none;
@@ -63,6 +71,11 @@
     flex-direction: row;
     flex: 1;
     overflow: hidden;
+  }
+
+  h4 {
+    font-size: 14px;
+    color:#fff;
   }
   
   .wrapper {
