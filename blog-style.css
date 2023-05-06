@@ -97,6 +97,14 @@
     margin-right: -20px;
     line-height: 1.25;
   }
+
+  .article-img {
+    width: 50%;
+    padding-bottom: 5px;
+    padding-right: 17px;
+    display: flex;
+    float: left;
+  }
   
   article h2 {
     font-size: 24px;
