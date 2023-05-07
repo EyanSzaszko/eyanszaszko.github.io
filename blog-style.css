@@ -98,6 +98,10 @@
     line-height: 1.25;
   }
 
+  article a {
+    color: #b2eef8
+  }
+
   .article-img {
     width: 50%;
     padding-bottom: 5px;
